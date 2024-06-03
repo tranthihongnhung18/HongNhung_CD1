@@ -2,5 +2,10 @@
 @section('title','lien he')
 
 @section('content')
-lien he
+@if($contact)
+        <p>Phone: {{ $contact->phone }}</p>
+    
+    @else
+        <p>No contact information</p>
+    @endif
 @endsection

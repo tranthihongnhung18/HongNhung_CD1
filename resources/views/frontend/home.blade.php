@@ -1,64 +1,9 @@
 @extends('layouts.site')
-@section('title','Trang chu')
+@section('title', 'Trang chu')
 @section('content')
     <main class="bodywrap">
         <h1 class="d-none">Ego Helios - Mẫu giao diện dành cho của hàng đồng hồ, thiết bị điện tử, đồ công nghệ</h1>
-        <section class="home_section_1_margin" style="margin-bottom:36px">
-            <div class="section_slider swiper-button">
-                <div class="home-slider swiper-container swiper-data swiper-container-initialized swiper-container-horizontal swiper-container-autoheight"
-                    data-drag="true" data-xl="1" data-lg="1" data-md="1" data-xs="1" data-x="1"
-                    data-autoplay="3000" data-height="true" data-space="0" style="cursor: grab;">
-                    <div class="swiper-wrapper" id="swiper-wrapper-e7a707b7695333fd" aria-live="off"
-                        style="height: 191px; transform: translate3d(-665px, 0px, 0px); transition: all 0ms ease 0s;">
-                        <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 2"
-                            style="width: 655px; margin-right: 10px;">
-                            <a href="#" class="clearfix" title="Sale toàn bộ cửa hàng">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_1.jpg?1710404714890">
-                                    <source media="(min-width: 992px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_1.jpg?1710404714890">
-                                    <source media="(min-width: 569px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_1.jpg?1710404714890">
-                                    <source media="(max-width: 580px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_mb_1.jpg?1710404714890">
-                                    <img src="giaodien/100/508/659/themes/939030/assets/slider_1.jpg?1710404714890"
-                                        alt="Sale toàn bộ cửa hàng" class="img-responsive">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 2"
-                            style="width: 655px; margin-right: 10px;">
-                            <a href="#" class="clearfix" title="Đồng hồ">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_2.jpg?1710404714890">
-                                    <source media="(min-width: 992px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_2.jpg?1710404714890">
-                                    <source media="(min-width: 569px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_2.jpg?1710404714890">
-                                    <source media="(max-width: 580px)"
-                                        srcset="giaodien/100/508/659/themes/939030/assets/slider_mb_2.jpg?1710404714890">
-                                    <img src="giaodien/100/508/659/themes/939030/assets/slider_2.jpg?1710404714890"
-                                        alt="Đồng hồ" class="img-responsive">
-                                </picture>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
-                        aria-controls="swiper-wrapper-e7a707b7695333fd" aria-disabled="false"><svg class="icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#previcon"></use>
-                        </svg></div>
-                    <div class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button"
-                        aria-label="Next slide" aria-controls="swiper-wrapper-e7a707b7695333fd" aria-disabled="true">
-                        <svg class="icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nexticon"></use>
-                        </svg>
-                    </div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                </div>
-            </div>
-        </section>
+        <x-slider :banners="$banners" />
         <section class="home_section_2_margin" style="margin-bottom:36px">
             <div class="section_new_product flash">
                 <div class="container">
@@ -144,8 +89,7 @@
                                                         alt="Đồng Hồ Zenith Chronomaster Sport">
 
                                                     <div class="group-option-item">
-                                                        <a href="javascript:;"
-                                                            data-url="dong-ho-zenith-chronomaster-sport"
+                                                        <a href="javascript:;" data-url="dong-ho-zenith-chronomaster-sport"
                                                             title="Thêm vào yêu thích"
                                                             class="favorite-link btn-views d-inline-block"><svg
                                                                 class="icon">

@@ -235,7 +235,7 @@
                         <nav class="nav-horizontal">
                             <ul class="item_big">
                                 <li class="nav-item active ">
-                                    <a class="a-img" href="{{ route('home') }}" title="Trang chủ">
+                                    <a class="a-img" href="{{ route('site.home') }}" title="Trang chủ">
                                         Trang chủ
                                     </a>
                                 </li>
